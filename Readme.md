@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Alina Levintas](https://up.htmlacademy.ru/adaptive/24/user/1756361).
-* Наставник: `Неизвестно`.
+* Наставник: [Павел Нюкало](https://up.htmlacademy.ru/profile/nyukalopavel).
 
 ---
 
