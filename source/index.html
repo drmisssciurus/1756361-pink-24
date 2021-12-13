@@ -2,11 +2,13 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="./css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
+      <section class="page-header__wrapper"></section>
       <a href="index.html" class="page-header__logo">
         <img class="page-header__logo-image" src="img/pink-mobile.svg" width="74" height="23" alt="Пинк">
       </a>
@@ -49,11 +51,13 @@
           </ul>
         </div>
       </nav>
+    </section>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Приложение "Пинк" - взгляните на жизнь иначе!</h1>
       <section class="intro">
         <div class="intro__wrapper">
+
           <header class="intro__header">
             <h2 class="intro__slogan">
               Взгляните на жизнь иначе!
@@ -162,8 +166,8 @@
               <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
             </li>
           </ul>
-          <img src="img/map.png" width="320" height="286" alt="Карта">
         </div>
+        <img src="img/map.png" width="320" height="286" alt="Карта">
       </section>
     </main>
     <footer class="page-footer">
@@ -173,7 +177,7 @@
           <a class="visually-hidden" href="https://htmlacademy.ru">Приложение Пинки</a>
         </div>
         <div class="page-footer__social social">
-          <b class="social__title">Давайте дружить!</b>
+          <b class="social__title visually-hidden">Давайте дружить!</b>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__twitter" href="https://www.twitter.com/htmlacademy">Мы в Твиттере</a>
@@ -187,7 +191,7 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
+          <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </div>

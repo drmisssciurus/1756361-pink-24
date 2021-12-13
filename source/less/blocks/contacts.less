@@ -2,9 +2,9 @@
   font-size: 24px;
 }
 
-.contacts__list {
-  list-style: none;
-}
+// .contacts__list {
+//   list-style: none;
+// }
 
 .contacts__title {
   text-transform: none;
@@ -19,4 +19,23 @@
   text-transform: none;
   color: @pink;
   font-size: 24px;
+}
+
+.contacts__list {
+  list-style: none;
+  width: 320 px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    width: 660 px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200 px;
+    display: flex;
+    flex-direction: row;
+  }
 }

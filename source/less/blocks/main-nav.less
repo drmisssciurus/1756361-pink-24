@@ -12,3 +12,38 @@
     width: 23px;
   }
 }
+
+.main-nav__list {
+  margin: 0 px;
+  padding: 0 px;
+  list-style: none;
+}
+
+.main-nav__list a {
+  color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    display: flex;
+    width: 252px;
+    margin: 0 auto;
+    background-color: @gray;
+    box-shadow: 0 px 1px 0 px @black, inset 0 px 1px 0 px @white;
+    opacity: 0.1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1000px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
