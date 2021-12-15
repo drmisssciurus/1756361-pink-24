@@ -2,7 +2,17 @@
   list-style: none;
   color: @white;
   font-weight: bold;
-  margin: 0 px;
-  padding: 0 px;
-  background-color: @gray;
+  margin: 0;
+  padding: 0;
+}
+
+.site-list__item a {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
 }
