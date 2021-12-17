@@ -11,6 +11,10 @@
     height: 23px;
     width: 23px;
   }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .main-nav__list {
@@ -23,9 +27,8 @@
   color: @white;
 }
 
-
-@media (min-width: @tablet-width) {
-  .main-nav__wrapper {
+.main-nav__wrapper {
+  @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
     width: 252px;
@@ -34,14 +37,8 @@
     box-shadow: 0 1px 0 @black, inset 0 1px 0 @white;
     opacity: 0.1;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .main-nav__wrapper {
+  @media (min-width: @desktop-width) {
     width: 1000px;
-  }
-
-  .main-nav__toggle {
-    display: none;
   }
 }
