@@ -1,3 +1,9 @@
-.page-footer {
-  background-color: @pink;
-} //del
+.page-footer__wrapper {
+  background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
