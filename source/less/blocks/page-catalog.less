@@ -1,5 +1,6 @@
 .page-catalog__photo {
   font-weight: 10;
+  line-height: 38px;
   font-size: 24px;
   color: @white;
   text-transform: none;
@@ -7,6 +8,12 @@
   padding: 220px;
   display: block;
   background-image: url("../img/back-mobile.jpeg");
+  background-size: contain;
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .page-catalog__intro {
@@ -19,6 +26,24 @@
 .page-catalog__item {
   list-style: none;
   background-color: @background-light-gray;
+}
+
+.page-catalog__list {
+  display: grid;
+
+  width: 280px;
+  height: 301px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 455px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 555px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 /*.page-catalog__item--panorama {

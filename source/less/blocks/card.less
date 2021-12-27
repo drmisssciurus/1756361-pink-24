@@ -1,3 +1,21 @@
+.card {
+  display: grid;
+
+  width: 280px;
+  height: 301px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 455px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 555px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .card__name {
   text-transform: none;
   font-weight: bold;
