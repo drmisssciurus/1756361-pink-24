@@ -1,6 +1,15 @@
 .main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 70px;
+  height: 50px;
   fill: @white;
   background-color: transparent;
+  cursor: pointer;
+  border: none;
 
   &--open {
     height: 24px;
@@ -12,9 +21,32 @@
     width: 23px;
   }
 
+  &:hover,
+  &:active {
+    background-color: #624530;
+  }
+
   @media (min-width: @desktop-width) {
     display: none;
   }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  width: 36px;
+  height: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: fade(#ffffff, 30%);
+  box-shadow:
+    0 8px 0 0 fade(#ffffff, 30%),
+    0 16px 0 0 fade(#ffffff, 30%);
 }
 
 .main-nav__list {
