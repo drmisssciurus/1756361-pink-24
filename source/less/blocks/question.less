@@ -1,5 +1,13 @@
 .question {
   background-color: @background-light-gray;
+
+  @media (min-width: @tablet-width) {
+    background-color: @white;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: 2px solid @light-gray;
+  }
 }
 
 .question__legend {
