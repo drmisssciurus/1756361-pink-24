@@ -1,29 +1,28 @@
+.main-nav {
+  position: relative;
+  width: auto;
+  min-height: 66px;
+  color: @white;
+}
+
 .main-nav__toggle {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 21px;
+  right: 250px;
   z-index: 2;
   display: block;
-  width: 70px;
-  height: 50px;
   fill: @white;
   background-color: transparent;
   cursor: pointer;
   border: none;
 
-  &--open {
-    height: 24px;
-    width: 50px;
+  &:hover {
+    color: @pink;
   }
 
-  &--close {
-    height: 23px;
-    width: 23px;
-  }
-
-  &:hover,
   &:active {
-    background-color: @pink;
+    color: @pink;
+    opacity: 0.3;
   }
 
   @media (min-width: @desktop-width) {
@@ -34,19 +33,52 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 15px;
-  left: 17px;
-  width: 36px;
-  height: 2px;
+  display: block;
+  top: 21px;
+  left: 20px;
+  width: 50px;
+  height: 4px;
+  border-radius: 5px;
   background-color: @white;
-  box-shadow: 0 8px 0 0 @white, 0 16px 0 0 @white;
+  box-shadow: 0 6px 0 0 @white, 0 14px 0 0 @white;
 }
 
-.main-nav--closed .main-nav__toggle:active::before {
-  background-color: fade(@white, 30%);
+.main-nav__toggle--close .main-nav__toggle:active::before {
+  background-color: fade(@pink, 30%);
   box-shadow:
-    0 8px 0 0 fade(@white, 30%),
-    0 16px 0 0 fade(@white, 30%);
+    0 8px 0 0 fade(@pink, 30%),
+    0 16px 0 0 fade(@pink, 30%);
+}
+
+.main-nav__toggle--open .main-nav__toggle {
+  top: 0;
+  right: auto;
+  left: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 36px;
+    height: 2px;
+    background-color: @pink;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(@pink, 30%);
+  }
 }
 
 .main-nav__list {
