@@ -3,6 +3,8 @@
   width: auto;
   min-height: 66px;
   color: @white;
+  background-color: @grey;
+  opacity: 0.1;
 }
 
 .main-nav__toggle {
@@ -30,7 +32,7 @@
   }
 }
 
-.main-nav--closed .main-nav__toggle::before {
+.main-nav__toggle--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
   display: block;
@@ -97,7 +99,7 @@
     justify-content: space-between;
     width: 252px;
     margin: 0 auto;
-    background-color: @gray;
+    background-color: @grey;
     box-shadow: 0 1px 0 @black, inset 0 1px 0 @white;
     opacity: 0.1;
   }
