@@ -43,8 +43,11 @@
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
-    width: 660px;
+    max-width: 546px;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {

@@ -21,6 +21,10 @@
   padding: 15px 35px;
   font-size: 18px;
   margin-top: 28px;
+
+  @media (min-width: @tablet-width) {
+    background-color: initial;
+  }
 }
 
 .intro__list {
@@ -28,6 +32,10 @@
   font-size: 14px;
   text-transform: none;
   background-color: @dark-grey;
+
+  @media (min-width: @tablet-width) {
+    background-color: initial;
+  }
 }
 
 .intro__list p {
@@ -40,4 +48,22 @@
 
 .intro__image {
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.intro__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/hand-phone.png");
+    background-position: right bottom;
+    right: -30px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+  }
 }

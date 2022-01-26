@@ -1,21 +1,27 @@
 .slider__toggle {
-  border-radius: 2px;
-  background: @lightgrey;
-  padding: 15px 35px;
-  font-size: 18px;
-  margin-top: 28px;
+  border: none;
+  border-radius: 50px;
+  background: @light-grey;
+  margin-right: 16px;
+  cursor: pointer;
+  width: 6px;
+  height: 6px;
+  font-size: 0;
+  padding: 3px 3px;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .slider__toggle--current {
-  border: 3px solid @gray;
-  border-radius: 2px;
-  background: @dark-grey;
-  color: @white;
-  padding: 20px;
+  border: 3px solid @dark-grey;
+  border-radius: 50px;
+  background: @white;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
+  width: 6px;
+  height: 6px;
+  padding: 3px 3px;
 }
