@@ -4,15 +4,10 @@
   font-weight: bold;
   margin: 0;
   padding: 0;
+  background-color: @grey;
 }
 
-.site-list__item a {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: column;
-  }
-
-  @media (min-width: @desktop-width) {
-    flex-direction: row;
-  }
+.site-list__item {
+  box-shadow: 0 1px 0 @black, inset 0 1px 0 @white-shadow;
+  padding: 18px 0 18px 0;
 }

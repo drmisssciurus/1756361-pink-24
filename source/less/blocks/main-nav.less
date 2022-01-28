@@ -4,13 +4,13 @@
   min-height: 66px;
   color: @white;
   background-color: @grey;
-  opacity: 0.1;
 }
 
 .main-nav__toggle {
   position: absolute;
+  width: 50px;
   top: 21px;
-  right: 250px;
+  right: 20px;
   z-index: 2;
   display: block;
   fill: @white;
@@ -32,12 +32,9 @@
   }
 }
 
-.main-nav__toggle--closed .main-nav__toggle::before {
+.main-nav__toggle--closed::before {
   content: "";
-  position: absolute;
   display: block;
-  top: 21px;
-  left: 20px;
   width: 50px;
   height: 4px;
   border-radius: 5px;
@@ -45,14 +42,14 @@
   box-shadow: 0 6px 0 0 @white, 0 14px 0 0 @white;
 }
 
-.main-nav__toggle--close .main-nav__toggle:active::before {
+.main-nav__toggle--close:active::before {
   background-color: fade(@pink, 30%);
   box-shadow:
     0 8px 0 0 fade(@pink, 30%),
     0 16px 0 0 fade(@pink, 30%);
 }
 
-.main-nav__toggle--open .main-nav__toggle {
+.main-nav__toggle--open {
   top: 0;
   right: auto;
   left: 0;

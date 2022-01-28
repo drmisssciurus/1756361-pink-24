@@ -1,7 +1,6 @@
 .triangle {
-  position: relative;
-  width: 600000px;
-  height: 400px;
+  width: 400px;
+  height: 50px;
 }
 
 .triangle::after {
@@ -9,7 +8,9 @@
   bottom: -60px;
   content: "smth";
   display: block;
-  width: 400px;
-  height: 50px;
-  background-image: url("../img/triangle-map.png");
+
+  background-image: url("../img/triangle-map.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

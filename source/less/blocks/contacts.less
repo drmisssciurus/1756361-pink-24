@@ -54,3 +54,20 @@
     width: 1200px;
   }
 }
+
+.contacts__wrapper {
+  position: relative;
+}
+
+.contacts__wrapper::after {
+  position: absolute;
+  bottom: -60px;
+  content: "smth";
+  display: block;
+  background-image: url("../img/triangle-map.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 123px;
+}

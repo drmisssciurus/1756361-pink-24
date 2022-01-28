@@ -22,12 +22,25 @@
   font-size: 18px;
   margin-top: 28px;
 
+  &:hover {
+    color: @pink;
+    background-color: @white;
+  }
+
+  &:active {
+    color: @pink;
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     background-color: initial;
   }
 }
 
 .intro__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: @white;
   font-size: 14px;
   text-transform: none;

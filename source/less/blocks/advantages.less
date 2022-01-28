@@ -1,10 +1,10 @@
 .advantages__wrapper-gray-background {
   display: block;
-  content: "fjhdkjfhdkjf";
-  background-image: url("../img/grey-background1.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% -250px;
+  background-image: url("../img/iphone.png"), url("../img/grey-background1.png");
+  background-size: auto, auto;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 680px, 50%;
+  padding-bottom: 325px;
 }
 
 .advantages__maintitle {
@@ -23,13 +23,9 @@
   padding: 20px;
 }
 
-.advantages__item {
-  width: 30%;
-}
-
 .advantages__list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   list-style: none;
   padding: 20px;
@@ -61,9 +57,7 @@
 }
 
 .advantages__item-phone-desktop {
-  @media (min-width: @mobile-width-only) {
-    display: none;
-  }
+  display: none;
 
   @media (min-width: @tablet-width) {
     display: block;
