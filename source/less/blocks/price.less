@@ -1,7 +1,15 @@
 .price__wrapper {
   background-image: url("../img/grey-background-price.png");
-  background-size: contain;
+  background-size: cover;
   height: 500px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/grey-background-price2.png");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/grey-background-price3.png");
+  }
 }
 
 .price__table {
@@ -12,6 +20,9 @@
 
   @media (min-width: @tablet-width) {
     height: 216px;
+    transform: none;
+    margin: auto;
+    margin-top: 50px;
   }
 
   @media (min-width: @desktop-width) {
@@ -27,6 +38,7 @@
   padding-right: 20px;
   padding-left: 20px;
   height: 59px;
+  width: 152px;
 }
 
 .price__table-main {
@@ -53,6 +65,12 @@
   display: none;
   border: none;
   background-color: @background-light-grey;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    border: none;
+    background-color: @background-light-grey;
+  }
 }
 
 .price__table--hit {
@@ -69,14 +87,26 @@
   padding-left: 20px;
   padding-right: 20px;
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .price__table--yes {
   background-image: url("../img/yes.svg");
+
+  @media (min-width: @tablet-width) {
+    background-position: center;
+  }
 }
 
 .price__table--no {
   background-image: url("../img/no.svg");
+
+  @media (min-width: @tablet-width) {
+    background-position: center;
+  }
 }
 
 .price__table-item--mobile {
@@ -85,4 +115,8 @@
   font-size: 14px;
   line-height: 30px;
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    font-size: 0;
+  }
 }

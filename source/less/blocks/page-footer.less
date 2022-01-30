@@ -1,3 +1,7 @@
+.page-footer {
+  padding: 36px 20px 40px 20px;
+}
+
 .page-footer__wrapper {
   background-color: @white;
 
@@ -5,5 +9,20 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-footer__logo--visible-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.page-footer__logo--visible-mobile {
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }

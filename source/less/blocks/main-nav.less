@@ -1,9 +1,11 @@
 .main-nav {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   width: auto;
-  min-height: 66px;
   color: @white;
   background-color: @grey;
+  box-shadow: 0 1px 0 @black, inset 0 1px 0 @white-shadow;
 }
 
 .main-nav__toggle {
@@ -88,20 +90,4 @@
 
 .main-nav__list a {
   color: @white;
-}
-
-.main-nav__wrapper {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    width: 252px;
-    margin: 0 auto;
-    background-color: @grey;
-    box-shadow: 0 1px 0 @black, inset 0 1px 0 @white;
-    opacity: 0.1;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1000px;
-  }
 }
