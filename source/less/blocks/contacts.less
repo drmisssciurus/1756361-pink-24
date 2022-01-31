@@ -38,9 +38,10 @@
 
 .contacts__list {
   list-style: none;
-  width: 320px;
   display: flex;
   flex-direction: column;
+  padding: 0;
+  margin-bottom: 40px;
 
   @media (min-width: @tablet-width) {
     max-width: 546px;
@@ -55,6 +56,11 @@
   }
 }
 
+.contacts__item {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .contacts__wrapper {
   position: relative;
 }
@@ -62,7 +68,6 @@
 .contacts__wrapper::after {
   position: absolute;
   bottom: -60px;
-  content: "smth";
   display: block;
   background-image: url("../img/triangle-map.svg");
   background-repeat: no-repeat;
