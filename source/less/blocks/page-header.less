@@ -4,7 +4,7 @@
   background-image: url("../img/back-mobile.jpeg");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: 50% 84px;
+  background-position: center top;
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/back-tablet.jpg");
@@ -21,13 +21,17 @@
   padding: 21px;
   cursor: pointer;
   background-color: @grey;
+  fill: inherit;
+  stroke: inherit;
+  stroke-width: inherit;
 
   &:hover {
-    color: @pink;
+    stroke: @pink;
+    fill: @pink;
   }
 
   &:active {
-    color: @white;
+    stroke: @white;
     opacity: 0.3;
   }
 }
