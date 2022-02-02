@@ -1,13 +1,21 @@
 .user-data {
-  border: 2px solid @light-grey;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin: 0;
 }
 
 .user-data__label {
+  display: block;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   color: @pink;
+  padding-left: 33px;
+  padding-bottom: 17px;
+  padding-top: 10px;
 }
 
 .user-data__input {
@@ -18,8 +26,21 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
+  height: 59px;
+  outline: none;
+  box-sizing: border-box;
+  padding: 20px;
 
-  &:placeholder {
+  &::placeholder {
+    display: block;
     color: @grey;
+    padding-left: 20px;
   }
+}
+
+.user-name__wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin: 0;
 }

@@ -1,5 +1,7 @@
 .full-name {
   border: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .full-name__label {
@@ -8,6 +10,9 @@
   font-size: 14px;
   line-height: 30px;
   color: @pink;
+  padding-left: 33px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .full-name__input {
@@ -18,8 +23,21 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
+  height: 59px;
+  outline: none;
+  box-sizing: border-box;
+  padding: 20px;
 
   &::placeholder {
+    display: block;
     color: @grey;
+    padding-left: 20px;
   }
+}
+
+.full-name__wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin: 0;
 }

@@ -1,7 +1,23 @@
 .form__item {
   display: flex;
+  flex-direction: column;
 
   @media (min-width: @tablet-width) {
     background-color: @white;
   }
+}
+
+.form__button-submit {
+  border: none;
+  border-radius: 2px;
+  background: @green-button;
+  color: @white;
+  padding: 23px 45px;
+  margin-top: 28px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  width: 276px;
 }

@@ -1,5 +1,6 @@
 .question {
   background-color: @background-light-grey;
+  border: none;
 
   @media (min-width: @tablet-width) {
     background-color: @white;
@@ -14,4 +15,12 @@
   font-size: 14px;
   line-height: 18px;
   color: @pink;
+}
+
+.question__wrapper {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
 }

@@ -88,7 +88,7 @@
       </fieldset>
       <fieldset class="form__item checkbox-list filter">
         <legend class="checkbox-list__legend">Ваши безбашенные достижения в путешествии</legend>
-        <ul>
+        <ul class="checkbox-list__wrapper">
           <li class="filter__checkbox checkbox">
             <input class="checkbox__input" type="checkbox" name="shark" id="shark" checked>
             <span class="checkbox__icon"></span>
@@ -133,20 +133,20 @@
       </fieldset>
       <fieldset class="form__item question filter">
         <legend class="question__legend">С каким приложением путешествовали?</legend>
-        <ul>
+        <ul class="question__wrapper">
           <li class="filter__checkbox checkbox">
-            <input class="checkbox__input" type="radio" name="Pink для iOS" value="Pink для iOS" checked>
-            <span class="checkbox__icon"></span>
+            <input class="checkbox__input-r" type="radio" name="Pink для iOS" value="Pink для iOS" checked>
+            <span class="checkbox__icon-r"></span>
             <label class="checkbox__label">Pink для iOS</label>
           </li>
           <li class="filter__checkbox checkbox">
-            <input class="checkbox__input" type="radio" name="Pink для iOS" value="Pink на Android">
-            <span class="checkbox__icon"></span>
+            <input class="checkbox__input-r" type="radio" name="Pink для iOS" value="Pink на Android">
+            <span class="checkbox__icon-r"></span>
             <label class="checkbox__label">Pink на Android</label>
           </li>
           <li class="filter__checkbox checkbox">
-            <input class="checkbox__input" type="radio" name="Pink для iOS" value="Windows Phone">
-            <span class="checkbox__icon"></span>
+            <input class="checkbox__input-r" type="radio" name="Pink для iOS" value="Windows Phone">
+            <span class="checkbox__icon-r"></span>
             <label class="checkbox__label">Windows Phone</label>
           </li>
         </ul>
@@ -154,9 +154,9 @@
       <fieldset class="form__item comment">
         <legend class="comment__legend">Опишите свои эмоции</legend>
           <textarea id="textarea" name="textarea" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
-          <button type="submit" value="Отправить форму">Отправить форму</button>
-          <p>* — Обязательные поля</p>
       </fieldset>
+      <button class="form__button-submit" type="submit" value="Отправить форму">Отправить форму</button>
+          <p>* — Обязательные поля</p>
       </form>
     </main>
     <footer class="page-footer">
