@@ -1,18 +1,20 @@
 .site-list {
   list-style: none;
-  color: @white;
   font-weight: bold;
-  margin: 0;
-  padding: 0;
-}
-
-.site-list__item a {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: column;
-  }
+  background-color: @grey;
 
   @media (min-width: @desktop-width) {
-    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    width: 650px;
+    justify-content: space-between;
+    color: @white;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-left: 30px;
   }
+}
+
+.site-list__item {
+  box-shadow: 0 1px 0 @black, inset 0 1px 0 @white-shadow;
+  padding: 18px 0 18px 0;
 }

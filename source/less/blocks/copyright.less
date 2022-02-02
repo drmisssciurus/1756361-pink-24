@@ -1,3 +1,21 @@
 .copyright {
-  background-color: @pink;
-} //del
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+}
+
+.copyright__text {
+  margin-right: 15px;
+}
+
+.copyright__icon {
+  &:hover {
+    fill: @black;
+  }
+
+  &:active {
+    fill: @black;
+    opacity: 0.3;
+  }
+}

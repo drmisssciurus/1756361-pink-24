@@ -1,5 +1,21 @@
+.contacts iframe {
+  border: none;
+  display: block;
+
+  @media (min-width: @desktop-width) {
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 374px;
+  }
+}
+
 .contacts__maintitle {
   font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 29px;
 }
 
 .contacts__title {
@@ -15,20 +31,49 @@
   text-transform: none;
   color: @pink;
   font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 33px;
 }
 
 .contacts__list {
   list-style: none;
-  width: 320px;
   display: flex;
   flex-direction: column;
+  padding: 0;
+  margin-bottom: 40px;
 
   @media (min-width: @tablet-width) {
-    width: 660px;
+    max-width: 546px;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {
     width: 1200px;
   }
+}
+
+.contacts__item {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contacts__wrapper {
+  position: relative;
+}
+
+.contacts__wrapper::after {
+  position: absolute;
+  bottom: -120px;
+  display: block;
+  content: "";
+  background-image: url("../img/triangle-map.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 123px;
 }
