@@ -42,6 +42,8 @@
   flex-direction: column;
   padding: 0;
   margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: @tablet-width) {
     max-width: 546px;
@@ -54,6 +56,11 @@
   @media (min-width: @desktop-width) {
     width: 1200px;
   }
+}
+
+.contacts__item:nth-child(3) {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contacts__item {
@@ -72,8 +79,18 @@
   content: "";
   background-image: url("../img/triangle-map.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
   background-size: cover;
   width: 100%;
   height: 123px;
+
+  @media (min-width: @tablet-width) {
+    bottom: -124px;
+    background-image: url("../img/triangle-map-table.png");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/triangle-map-desktop.png");
+    bottom: -145px;
+  }
 }

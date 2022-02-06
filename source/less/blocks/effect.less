@@ -2,6 +2,52 @@
   display: none;
 
   @media (min-width: @tablet-width) {
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 20px;
+  }
+}
+
+.effect__img {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+}
+
+.effect__title {
+  @media (min-width: @tablet-width) {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0;
+    text-align: left;
+    padding-top: 44px;
+  }
+}
+
+.effect__item {
+  @media (min-width: @tablet-width) {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: none;
+    text-align: left;
+    padding-right: 10px;
+  }
+}
+
+.effect__link {
+  @media (min-width: @tablet-width) {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: none;
+    text-decoration-line: underline;
+    color: @pink;
+    text-align: left;
+    padding-bottom: 30px;
   }
 }
