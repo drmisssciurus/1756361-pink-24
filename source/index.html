@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/style.min.css" rel="stylesheet">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
   </head>
   <body class="page__body">
@@ -80,7 +80,9 @@
             <button class="intro__button" type="button">Скачать приложение</button>
             <ul class="intro__marketplace marketplace">
               <li class="marketplace__item marketplace__item--apple">
-                <span class="visually-hidden">Apple</span>
+                <a href="app">
+                  <span class="visually-hidden">Apple</span>
+                </a>
               </li>
               <li class="marketplace__item marketplace__item--android">
                 <span class="visually-hidden">Android</span>
@@ -106,17 +108,17 @@
           <div class="advantages__wrapper-gray-background">
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--mood">
-              <img class="advantages__item-phone-desktop" src="img/phone1.png" width="175" height="300" alt="Телефон с изображением смайлика">
+              <img class="advantages__item-phone-desktop" src="img/phone1.png" width="221" height="305" alt="Телефон с изображением мусорки">
               <h4 class="advantages__title">Поднимает настроение</h4>
               <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="advantages__item advantages__item--peace">
-              <img class="advantages__item-phone-desktop" src="img/phone2.png" width="175" height="300" alt="Телефон с изображением смайлика">
+              <img class="advantages__item-phone-desktop" src="img/phone2.png" width="221" height="305" alt="Телефон с изображением мусорки с розовым фильтром">
               <h4 class="advantages__title">Меняет мир вокруг</h4>
               <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="advantages__item advantages__item--friend">
-              <img class="advantages__item-phone-desktop" src="img/phone3.png" width="175" height="300" alt="Телефон с изображением смайлика">
+              <img class="advantages__item-phone-desktop" src="img/phone3.png" width="221" height="305" alt="Телефон с изображением мусорки с розовым фильтром и смайлика">
               <h4 class="advantages__title">Заводит новых друзей</h4>
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
@@ -125,12 +127,12 @@
         </div>
       </section>
       <section class="effect">
-        <img src="img/watch.png" width="157" height="320" alt="Часы-секундомер с значением 24">
-        <h2>Эффект на 24 часа!</h2>
-        <p>Британские ученые провели исследования
+        <img class="effect__img" src="img/watch.png" width="238" height="276" alt="Часы-секундомер с значением 24">
+        <h2 class="effect__title">Эффект на 24 часа!</h2>
+        <p class="effect__item">Британские ученые провели исследования
           и доказали, что положительный эффект
           от использования приложения длится целые сутки!</p>
-        <a>Узнать больше об исследовании</a>
+        <a class="effect__link">Узнать больше об исследовании</a>
       </section>
       <section class="reviews">
         <div class="reviews__wrapper slider">
@@ -139,7 +141,7 @@
             <li>
               <blockquote class="reviews__item slider__item">
                 <div class="reviews__author-info">
-                  <cite class="reviews__author-name">Николай Петров<span class=" reviews__author-name reviews__author-name--mobile">25 лет, водитель трамвая</span></cite>
+                  <cite class="reviews__author-name">Николай Петров<span class="reviews__author-name reviews__author-name--mobile">25 лет, водитель трамвая</span></cite>
                   <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
                 </div>
               </blockquote>

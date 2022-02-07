@@ -4,11 +4,12 @@
   background-image: url("../img/back-mobile.jpeg");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: 50%;
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/back-tablet.jpg");
     background-size: cover;
+    background-position: center top;
   }
 
   @media (min-width: @desktop-width) {
@@ -24,15 +25,19 @@
   fill: inherit;
   stroke: inherit;
   stroke-width: inherit;
+}
 
+.header__logo {
   &:hover {
-    stroke: @pink;
-    fill: @pink;
+    path {
+      fill: @pink;
+    }
   }
 
   &:active {
-    stroke: @white;
-    opacity: 0.3;
+    path {
+      fill: rgba(@white, 0.3);
+    }
   }
 }
 
