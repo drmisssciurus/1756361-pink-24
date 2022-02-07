@@ -74,7 +74,13 @@
       <section>
         <ul class="page-catalog__list">
           <li class="page-catalog__item card page-catalog__item--panorama">
-            <img class="card__image" src="img/panorama-desktop.jpg" width="320" height="137" alt="Панорамное фото моста">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/panorama-desktop.png">
+              <source media="(min-width: 768px)" srcset="img/panorama-tablet.png">
+              <img class="card__image" src="img/panorama-mobile.png"
+              srcset="img/panorama-mobile.png 1x, img/panorama-mobile@2x.png 2x"
+              width="320" height="137" alt="Панорамное фото моста">
+            </picture>
             <div class="card__wrapper">
             <h4 class="card__name">Анна</h4>
             <span class="card__time">(5 минут назад)</span>
@@ -84,8 +90,12 @@
           </li>
           <li class="page-catalog__item card">
             <div class="card__wrapper">
-            <img class="card__image" src="img/photo-1-desktop.jpeg" width="280" height="180" alt="Флтография парковки">
-
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.png">
+                <source media="(min-width: 768px)" srcset="img/photo-1-tablet.png">
+                <img class="card__image" src="img/photo-1-mobile.png"
+                srcset="img/photo-1-mobile.png 1x, img/photo-1-mobile@2x.png 2x" width="280" height="180" alt="Флтография парковки">
+              </picture>
               <h4 class="card__name">Левон</h4>
               <span class="card__time">(5 часов назад)</span>
               <span class="card__likes">Нравится: 356</span>
@@ -94,8 +104,12 @@
           </li>
           <li class="page-catalog__item card">
             <div class="card__wrapper">
-            <img class="card__image" src="img/photo-2-desktop.jpeg" width="280" height="180" alt="Фотография барабанов">
-
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.png">
+                <source media="(min-width: 768px)" srcset="img/photo-2-tablet.png">
+                <img class="card__image" src="img/photo-2-mobile.png"
+                srcset="img/photo-2-mobile.png 1x, img/photo-2-mobile@2x.png 2x" width="280" height="180" alt="Фотография барабанов">
+              </picture>
               <h4 class="card__name">Антон</h4>
               <span class="card__time">(12 часов назад)</span>
               <span class="card__ikes">Нравится: 666</span>
@@ -104,8 +118,12 @@
           </li>
           <li class="page-catalog__item card">
             <div class="card__wrapper">
-            <img class="card__image" src="img/photo-3-desktop.jpeg" width="280" height="180" alt="Фотография стеклянного потолка">
-
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.png">
+                <source media="(min-width: 768px)" srcset="img/photo-3-tablet.png">
+                <img class="card__image" src="img/photo-3-mobile.png"
+                srcset="img/photo-3-mobile.png 1x, img/photo-3-mobile@2x.png 2x" width="280" height="180" alt="Фотография стеклянного потолка">
+              </picture>
               <h4 class="card__name">Борис</h4>
               <span class="card__time">(20 часов назад)</span>
               <span class="card__likes">Нравится: 215</span>
@@ -114,7 +132,12 @@
           </li>
           <li class="page-catalog__item card">
             <div class="card__wrapper">
-            <img class="card__image" src="img/photo-4-desktop.jpeg" width="280" height="180" alt="Ярмарка Кубанская бахча">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.png">
+                <source media="(min-width: 768px)" srcset="img/photo-4-tablet.png">
+              <img class="card__image" src="img/photo-4-mobile.png"
+              srcset="img/photo-4-mobile.png 1x, img/photo-4-mobile@2x.png 2x" width="280" height="180" alt="Ярмарка Кубанская бахча">
+              </picture>
             <h4 class="card__name">Сергей</h4>
             <span class="card__time">(25 часов назад)</span>
             <span class="card__likes">Нравится: 4</span>
@@ -123,8 +146,12 @@
           </li>
           <li class="page-catalog__item card">
             <div class="card__wrapper">
-            <img class="card__image" src="img/photo-5-desktop.jpeg" width="280" height="180" alt="Фотография ног на фоте обрыва с горы">
-
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-5-desktop.png">
+                <source media="(min-width: 768px)" srcset="img/photo-5-tablet.png">
+                <img class="card__image" src="img/photo-5-mobile.png"
+                srcset="img/photo-5-mobile.png 1x, img/photo-5-mobile@2x.png 2x" width="280" height="180" alt="Фотография ног на фоте обрыва с горы">
+              </picture>
               <h4 class="card__name">Максим</h4>
               <span class="card__time">(40 часов назад)</span>
               <span class="card__likes">Нравится: 150</span>
@@ -133,8 +160,12 @@
           </li>
           <li class="page-catalog__item card">
             <div class="card__wrapper">
-            <img class="card__image" src="img/photo-6-desktop.jpeg" width="280" height="180" alt="Фотография крыла самолета">
-
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.png">
+                <source media="(min-width: 768px)" srcset="img/photo-6-tablet.png">
+                <img class="card__image" src="img/photo-6-mobile.png"
+                srcset="img/photo-6-mobile.png 1x, img/photo-6-mobile@2x.png 2x" width="280" height="180" alt="Фотография крыла самолета">
+              </picture>
               <h4 class="card__name">Надежда</h4>
               <span class="card__time">(45 часов назад)</span>
               <span class="card__likes">Нравится: 2560</span>
@@ -146,7 +177,8 @@
       <p class="photo-editor__intro">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       <section class="page-catalog__photo-editor photo-editor">
         <h2 class="visually-hidden">Редактируйте и Выкладывайте ваши фотографии с нами</h2>
-        <img class="photo-editor__image" src="img/photo-7-tablet.jpeg" width="280" height="374" alt="Фотография заснеженной дороги">
+        <img class="photo-editor__image" src="img/photo-7-tablet.jpeg"
+        srcset="img/photo-7-mobile.png 1x, img/photo-7-mobile@2x.png 2x" width="280" height="374" alt="Фотография заснеженной дороги">
         <div class="photo-editor__wrapper">
         <button class="photo-editor__crop">
           <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -172,8 +204,8 @@
               <input class="photo-editor__range-slider" type="range" name="min-max-range" min="0" max="100" value="90">
             </label>
           </div>
-        <button class="photo-editor__button photo-editor__button--post">Запостить</button>
-        <button class="photo-editor__button photo-editor__button--cancel">Отмена</button>
+        <button class="photo-editor__button photo-editor__button--post" type="submit">Запостить</button>
+        <button class="photo-editor__button photo-editor__button--cancel" type="reset">Отмена</button>
       </section>
     </main>
     <footer class="page-footer">
